@@ -29,6 +29,14 @@ The project originated from **mpvEx** and continues to build, innovate, and refa
 
 ---
 
+## Installation
+
+NeoPlayer is officially distributed through Google Play.
+
+* **Google Play Store:** [NeoPlayer on Google Play](https://play.google.com/store/apps/details?id=live.alist.mpv.gp)
+
+---
+
 ## Features
 
 ### 🎬 Playback
