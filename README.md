@@ -11,260 +11,119 @@
 </p>
 
 > [!NOTE]
-> This repository is a maintained fork of the original **mpvEx** project.
+> This repository is an independently maintained and actively developed fork derived from the original **mpvEx** project.
 >
 > Original project: https://github.com/marlboro-advance/mpvEx
 >
-> NeoPlayer continues development of the project with additional features, bug fixes, performance improvements, Android TV support, casting support, network playback improvements, and other enhancements.
+> NeoPlayer continues expanding the ecosystem with new features, active bug fixes, performance optimizations, Android TV adaptation, casting support, enhanced network streaming protocols, and UI refinements.
 
 ---
 
 ## About
 
-**NeoPlayer** is an Android media player built around the mpv playback engine.
+**NeoPlayer** is a modern Android media player application built around the powerful mpv playback engine.
 
-This repository contains the open-source player core and related Android components used as part of NeoPlayer development.
+This repository contains the open-source player core and related Android application components used as part of NeoPlayer development.
 
-The project originated from the open-source **mpvEx** project and continues to build upon that foundation.
-
-The original mpvEx project is no longer actively maintained. NeoPlayer maintains this fork and continues to develop it with new features, fixes, and platform improvements.
+The project originated from **mpvEx** and continues to build, innovate, and refactor upon that foundation to provide a clean, high-performance, and feature-rich media consumption experience across mobile and Android TV platforms.
 
 ---
 
 ## Features
 
 ### 🎬 Playback
-
-* **MPV-based playback engine** — powerful audio and video playback with hardware decoding support
-* **Local video playback** — play videos directly from Android device storage
-* **Network playback** — support for network-based media sources
-* **Subtitle support** — customizable subtitle appearance and positioning
-* **Multiple audio and subtitle tracks**
-* **Playback history and resume**
-* **Automatic next-item playback**
-* **Playback speed control**
-* **Aspect ratio and zoom controls**
-* **A-B loop playback**
-* **Frame-by-frame navigation**
-* **HDR playback**
-* **HDR-to-SDR tone mapping**
-* **Dolby Vision playback support depending on device and decoder capabilities**
-* **Audio equalizer and playback customization**
+- **MPV-based playback engine** — High-performance audio and video playback with robust hardware decoding
+- **Local video playback** — Play videos seamlessly from internal and external Android device storage
+- **Network streaming** — Support for various network-based media sources and streaming protocols
+- **Subtitle customization** — Flexible subtitle positioning, styling, sync adjustments, and track selection
+- **Multi-track audio & subtitles** — Easy toggling between multiple audio languages and embedded/external subtitles
+- **Playback history & resume** — Automatically save and resume playback progress across sessions
+- **A-B loop playback** — Repeat specific video/audio segments continuously
+- **Frame-by-frame navigation** — Precise stepping through video frames
+- **HDR & Dolby Vision** — HDR playback and HDR-to-SDR tone mapping, with Dolby Vision support based on device decoders
+- **Audio equalizer** — Built-in equalizer and playback customization controls
 
 ### 🌐 Network & NAS
-
-* **WebDAV**
-* **SMB**
-* **OpenList**
-* **NAS media playback**
-* **Direct network playback**
-* **Network media browsing**
-* **Network playback proxy and buffering optimizations**
-* **M3U / media playlist support**
-* **STRM media support**
-* **Remote media library integration**
+- **WebDAV & SMB** — Stream media directly from home NAS and private cloud servers
+- **OpenList** — Direct media access and cloud-drive integration
+- **M3U & STRM support** — Support for live playlists and STRM media pointer files
+- **Network buffering optimizations** — Smart pre-buffering and proxy tuning for low-latency streaming
 
 ### ☁️ Cloud & Media Services
+Support for self-hosted and third-party media libraries:
+- **Plex / Emby / Jellyfin**
+- **Subsonic / Navidrome**
+- **DLNA / Feiniu Media / Ugreen**
 
-* **OpenList and cloud-drive access**
-* **Plex**
-* **Emby**
-* **Jellyfin**
-* **Subsonic**
-* **Navidrome**
-* **DLNA**
-* **Feiniu Media**
-* **Ugreen media services**
+### 🎵 Music Player
+- Local & network music browsing and playback
+- WebDAV music streaming
+- Synchronized lyrics display and album artwork rendering
+- Embedded ID3 metadata parsing
+- Audio decoder and stream info view
 
-Availability and supported features may vary depending on the service and server configuration.
-
-### 🎵 Music
-
-* **Local music playback**
-* **Network music playback**
-* **WebDAV music**
-* **Lyrics**
-* **Embedded metadata**
-* **Album artwork**
-* **Playback history**
-* **Music playlists**
-* **Audio decoder information**
-
-### 📡 Casting
-
-* **DLNA casting**
-* **Google Cast**
-* **Network device discovery**
-* **Media playback control for supported casting devices**
-
-Casting support depends on the target device, protocol, network configuration, and manufacturer implementation.
+### 📡 Casting & Remote Control
+- **Google Cast & DLNA casting** support
+- Automatic network device discovery
+- Remote media control for supported receiver devices
 
 ### 📺 Android TV
-
-NeoPlayer is being actively adapted for Android TV.
-
-TV-specific improvements include:
-
-* TV-optimized navigation
-* D-pad focus handling
-* Local video browsing
-* Local music browsing
-* Local network media browsing
-* Media library support
-* TV playback controls
-* Remote-control friendly interfaces
-
-### 📁 File & Media Management
-
-* Local media browser
-* Folder navigation
-* Video and music organization
-* Sorting
-* Grid and list layouts
-* Multi-selection
-* File operations
-* Playback records
-* Watched/unwatched state
-* Media thumbnails
-* Network media browsing
-
-### 🎨 Customization
-
-* Material-based Android UI
-* Light and dark themes
-* Custom playback controls
-* Subtitle customization
-* Playback gesture customization
-* Audio and video decoder information
-* Display cutout / notch playback options
-* Per-video playback settings
+Actively adapted for big-screen interfaces:
+- D-pad friendly navigation and focus management
+- TV-optimized video, music, and network media library interfaces
+- Remote-control accessible media controls
 
 ---
 
-## Performance
+## Credits & Acknowledgments
 
-NeoPlayer focuses on direct playback and efficient network streaming.
+NeoPlayer relies on, builds upon, and draws technical or design inspiration from the amazing open-source community. We express our deepest gratitude to the creators and maintainers of the following projects:
 
-Depending on the source and device, the player can provide:
+### Core Player Engine & Foundations
+* **[mpvEx](https://github.com/marlboro-advance/mpvEx)** — The original foundation for this project core.
+* **[mpv-android](https://github.com/mpv-android/mpv-android)** — The official Android build and JNI wrapper for mpv.
+* **[mpvKt](https://github.com/abdallahmehiz/mpvKt)** — Excellent Kotlin wrapper and reference for mpv integrations on Android.
 
-* Hardware-accelerated video decoding
-* Direct playback without server-side transcoding
-* Network buffering optimizations
-* Large-file playback improvements
-* WebDAV streaming optimizations
-* Reduced unnecessary data transfers
-* MPV-based advanced codec support
+### UI / UX & Feature Inspirations
+* **[mpvRx](https://github.com/Riteshp2001/mpvRx)** — Key functional and UI/UX layout inspirations during early development.
+* **[Next Player](https://github.com/anilbeesetti/nextplayer)** — References and UI/UX design concepts for modern Android video players.
+* **[Gramophone](https://github.com/FoedusProgramme/Gramophone)** — UI design and architecture inspirations for the local music experience.
+* **[APlayer](https://github.com/rRemix/APlayer)** — Functional references for Android player UI and interaction patterns.
+* **[FongMi](https://github.com/FongMi)** — Design and structural references for TV/media streaming adaptations.
 
-Actual performance depends on the Android device, decoder, network connection, media format, and server.
-
----
-
-## Android TV
-
-Android TV support is an ongoing area of development.
-
-The TV version focuses on providing a complete media-player experience for:
-
-* Local storage
-* NAS
-* WebDAV
-* SMB
-* OpenList
-* Network media libraries
-* Local music
-* Video playback
-* Casting
-
-Additional TV-specific improvements will continue to be added.
+### Media Protocols & Ecosystem
+* **[OpenList](https://github.com/OpenListTeam/OpenList)** — Cloud storage and media indexing integration.
+* **[Jellyfin](https://jellyfin.org/)** — Open-source media server ecosystem and protocol reference.
 
 ---
 
-## Installation
+## Fork & Architecture
 
-NeoPlayer is distributed through Google Play.
+This repository is a maintained fork derived from **mpvEx**, while incorporating original developments, modern Jetpack Compose refactoring, and functional inspirations from the projects credited above.
 
-Official application:
+NeoPlayer is engineered as an independent media player solution. Major custom enhancements include:
 
-https://play.google.com/store/apps/details?id=live.alist.mpv.gp
+- Complete Android TV adaptation with D-pad navigation
+- Refactored Jetpack Compose UI architecture
+- Advanced network protocol stream handling (WebDAV/SMB/OpenList)
+- Expanded media server clients (Plex, Emby, Jellyfin, Subsonic, Navidrome)
+- Integrated music engine with synchronized lyrics
+- Advanced playback controls (A-B loop, audio EQ, custom gestures)
 
-Development builds and source code are available through the project repositories.
-
----
-
-## Development
-
-This repository is primarily maintained as part of NeoPlayer development.
-
-The project uses modern Android technologies including:
-
-* Kotlin
-* Jetpack Compose
-* Coroutines / Flow
-* MVVM-based architecture
-* MPV playback engine
-
-Build requirements may change as the project evolves.
-
----
-
-## Credits
-
-NeoPlayer's player core has its roots in the following open-source projects:
-
-### mpvEx
-
-Original project:
-
-https://github.com/marlboro-advance/mpvEx
-
-### mpv-android
-
-https://github.com/mpv-android/mpv-android
-
-We are grateful to the original developers and contributors whose work provides the foundation for this project.
-
-NeoPlayer also makes use of and/or is inspired by various other open-source projects and libraries. Please refer to the corresponding source code, license files, and third-party notices for applicable licensing information.
-
----
-
-## Fork & Modifications
-
-This repository is a maintained fork of the original mpvEx project.
-
-NeoPlayer has introduced substantial modifications and additional development, including but not limited to:
-
-* Android TV support
-* Network playback improvements
-* WebDAV and NAS improvements
-* Google Cast integration
-* DLNA improvements
-* Media service integrations
-* Local music improvements
-* Subtitle improvements
-* Playback and buffering optimizations
-* HDR and Dolby Vision related improvements
-* File and media management improvements
-* UI and interaction improvements
-* Bug fixes and device compatibility improvements
-
-The original project remains credited to its respective authors.
+All original project copyrights, licenses, and design credit belong to their respective authors.
 
 ---
 
 ## License
 
-Unless otherwise stated, the source code derived from the original mpvEx project is distributed under the **Apache License 2.0**.
+Unless otherwise stated, source code original to this repository or derived from mpvEx is distributed under the **Apache License 2.0**. See [`LICENSE`](LICENSE) for full details.
 
-See [`LICENSE`](LICENSE) for the full license text.
+NeoPlayer respects all open-source software licenses. Where specific functional concepts, layout ideas, or code structures were referenced from open-source projects (such as mpvRx, mpvKt, Next Player, etc.), those implementations are written with independent adjustments or managed in compliance with their respective licenses.
 
-Third-party components included in this project may be distributed under their own licenses. Their respective copyright notices and license terms remain applicable.
-
-When redistributing this project or software derived from it, please review and comply with all applicable third-party licenses and notices.
+Third-party libraries, native dependencies (including `libmpv`), and external packages included or linked in this repository remain subject to their own original open-source licenses (GPL/LGPL, Apache 2.0, MIT, etc.).
 
 ---
 
 ## Disclaimer
 
-NeoPlayer is an independent project and is not affiliated with or endorsed by the original mpvEx project, mpv-android, or the developers of those projects.
-
-All trademarks and project names belong to their respective owners.
+NeoPlayer is an independent open-source software project. It is not affiliated with, officially endorsed by, or directly associated with mpv, mpv-android, or any of the open-source projects listed in the Credits section. All trademarks and brand names belong to their respective owners.
