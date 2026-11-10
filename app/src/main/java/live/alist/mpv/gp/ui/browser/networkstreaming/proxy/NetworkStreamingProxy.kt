@@ -641,6 +641,24 @@ class NetworkStreamingProxy private constructor() : NanoHTTPD("127.0.0.1", 0) {
             .build()
           chain.proceed(request)
         }
+        // 入口域名常把请求 307 到另一个 host:port；OkHttp 跨 origin 跟随跳转时会删掉
+        // Authorization，导致 WebDAV 回 401。这里在收到 401 时从先前的响应链里
+        // 取回原始 Authorization 头再重放一次（对 Basic/Digest 都适用，无需改 URL）。
+        .authenticator(object : okhttp3.Authenticator {
+          override fun authenticate(route: okhttp3.Route?, response: okhttp3.Response): okhttp3.Request? {
+            if (response.request.header("Authorization") != null) return null
+            var prior = response.priorResponse
+            while (prior != null) {
+              val auth = prior.request.header("Authorization")
+              if (auth != null) {
+                Log.d(TAG, "Retrying ${response.request.url} with credentials from redirect hop")
+                return response.request.newBuilder().header("Authorization", auth).build()
+              }
+              prior = prior.priorResponse
+            }
+            return null
+          }
+        })
         .build()
 
       // Build the request

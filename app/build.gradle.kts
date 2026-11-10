@@ -242,8 +242,9 @@ fun runCommand(command: String): String? =
       .readText()
       .trim()
 
-    process.waitFor()
-    output.ifEmpty { null }
+    // 没有 .git（例如从 tarball 解出来的构建目录）时 git 会返回非 0，此时当作无值
+    val exitCode = process.waitFor()
+    if (exitCode != 0) null else output.ifEmpty { null }
   } catch (e: Exception) {
     null
   }
