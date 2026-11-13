@@ -10,6 +10,14 @@
   <img src="https://img.shields.io/badge/Kotlin-2.2.21-purple.svg" />
 </p>
 
+## Installation
+
+NeoPlayer is officially distributed through Google Play.
+
+* **Google Play Store:** [NeoPlayer on Google Play](https://play.google.com/store/apps/details?id=live.alist.mpv.gp)
+
+---
+
 > [!NOTE]
 > This repository is an independently maintained and actively developed fork derived from the original **mpvEx** project.
 >
@@ -29,13 +37,6 @@ The project originated from **mpvEx** and continues to build, innovate, and refa
 
 ---
 
-## Installation
-
-NeoPlayer is officially distributed through Google Play.
-
-* **Google Play Store:** [NeoPlayer on Google Play](https://play.google.com/store/apps/details?id=live.alist.mpv.gp)
-
----
 
 ## Features
 
